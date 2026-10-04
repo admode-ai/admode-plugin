@@ -1,0 +1,11 @@
+{
+  "name": "admode",
+  "version": "1.0.0",
+  "description": "Ad prompts built on long-running Meta ads and checked by Admode before anything is rendered: static, UGC, podcast and animated video ads, ad copy, and the research behind them.",
+  "mcpServers": {
+    "admode": {
+      "httpUrl": "https://mcp.admode.ai/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "admode",
+  "owner": {
+    "name": "HV Digital AB"
+  },
+  "metadata": {
+    "description": "Admode for Claude: ad prompts built on long-running Meta ads, checked before anything is rendered.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "admode",
+      "source": "./plugins/admode",
+      "description": "Ad prompts built on long-running Meta ads and checked by Admode before anything is rendered: static, UGC, podcast and animated video ads, ad copy, and the research behind them.",
+      "version": "1.0.0",
+      "author": {
+        "name": "HV Digital AB",
+        "url": "https://admode.ai"
+      },
+      "homepage": "https://admode.ai",
+      "license": "MIT",
+      "keywords": [
+        "ads",
+        "meta-ads",
+        "facebook-ads",
+        "ad-creative",
+        "ugc",
+        "ad-copy",
+        "marketing"
+      ],
+      "category": "marketing"
+    }
+  ]
+}

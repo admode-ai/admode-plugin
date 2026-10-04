@@ -1,0 +1,51 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "admode",
+  "version": "1.0.0",
+  "description": "Ad prompts built on long-running Meta ads and checked by Admode before anything is rendered: static, UGC, podcast and animated video ads, ad copy, and the research behind them.",
+  "author": {
+    "name": "HV Digital AB",
+    "url": "https://admode.ai"
+  },
+  "homepage": "https://admode.ai",
+  "repository": "https://github.com/Hugovarai/admode-plugin",
+  "license": "MIT",
+  "keywords": [
+    "ads",
+    "meta-ads",
+    "facebook-ads",
+    "ad-creative",
+    "ugc",
+    "ad-copy",
+    "marketing"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Admode",
+        "shortDescription": "Ad prompts built on proven ads",
+        "longDescription": "Admode builds ad prompts on long-running Meta ads and checks every prompt before anything is rendered. Ask for ads and your AI loads your brand from Admode, picks a proven format for each ad, writes three full prompts, lets Admode pick the strongest, and has it checked against the proven ads before you see it.\n\nAdmode makes static image ads in 50 formats, UGC video ads in 8 formats, podcast ads, and animated ads in three styles: Pixar-style 3D, claymation and skeleton. It makes new versions of a static ad that already works, and ad copy built on the copy of long-running ads. It also makes and keeps your VOC research, Foundation Pack and Brand DNA, the research your ads are built on.\n\nAdmode writes and checks prompts. It doesn't generate images or video: you render with your own tools, and only after you agree. Your brands, research and saved work live in your Admode dashboard at admode.ai, where you can download or delete them.\n\nYou sign in with the email of your Admode plan.",
+        "developerName": "HV Digital AB",
+        "category": "Creativity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://admode.ai",
+        "supportURL": "https://admode.ai/support",
+        "privacyPolicyURL": "https://admode.ai/privacy",
+        "termsOfServiceURL": "https://admode.ai/terms",
+        "defaultPrompt": [
+          "Make me 5 static ads for my best-selling product",
+          "Make 3 UGC video ads for my brand",
+          "Make VOC research for my best seller"
+        ],
+        "brandColor": "#2A79D7",
+        "brandColorDark": "#2A79D7",
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/logo.png",
+        "screenshots": []
+      }
+    }
+  }
+}

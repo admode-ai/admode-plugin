@@ -1,0 +1,22 @@
+{
+  "name": "admode",
+  "displayName": "Admode",
+  "version": "1.0.0",
+  "description": "Ad prompts built on long-running Meta ads and checked by Admode before anything is rendered: static, UGC, podcast and animated video ads, ad copy, and the research behind them.",
+  "author": {
+    "name": "HV Digital AB",
+    "url": "https://admode.ai"
+  },
+  "homepage": "https://admode.ai",
+  "repository": "https://github.com/Hugovarai/admode-plugin",
+  "license": "MIT",
+  "keywords": [
+    "ads",
+    "meta-ads",
+    "facebook-ads",
+    "ad-creative",
+    "ugc",
+    "ad-copy",
+    "marketing"
+  ]
+}

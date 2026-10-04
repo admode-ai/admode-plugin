@@ -1,0 +1,20 @@
+{
+  "name": "admode",
+  "interface": {
+    "displayName": "Admode"
+  },
+  "plugins": [
+    {
+      "name": "admode",
+      "source": {
+        "source": "local",
+        "path": "./plugins/admode"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creativity"
+    }
+  ]
+}
