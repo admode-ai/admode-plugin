@@ -10,11 +10,11 @@ Admode writes and checks prompts. It doesn't generate images or video: your AI r
 
 You need an Admode account. The first time, your app asks you to sign in: use the email of your Admode account.
 
-- **Claude** (chat, Cowork and Claude Code): find Admode in Claude's directory. In Claude Code you can also run `/plugin marketplace add Hugovarai/admode-plugin`, then `/plugin install admode@admode`.
-- **ChatGPT and Codex**: find Admode in the plugin directory. In Codex you can also run `codex plugin marketplace add Hugovarai/admode-plugin`.
+- **Claude** (chat, Cowork and Claude Code): find Admode in Claude's directory. In Claude Code you can also run `/plugin marketplace add admode-ai/admode-plugin`, then `/plugin install admode@admode`.
+- **ChatGPT and Codex**: find Admode in the plugin directory. In Codex you can also run `codex plugin marketplace add admode-ai/admode-plugin`.
 - **Cursor**: install Admode from the Cursor Marketplace.
-- **VS Code with GitHub Copilot**: add `Hugovarai/admode-plugin` to the `chat.plugins.marketplaces` setting, then install Admode.
-- **Gemini CLI**: `gemini extensions install https://github.com/Hugovarai/admode-plugin`
+- **VS Code with GitHub Copilot**: add `admode-ai/admode-plugin` to the `chat.plugins.marketplaces` setting, then install Admode.
+- **Gemini CLI**: `gemini extensions install https://github.com/admode-ai/admode-plugin`
 - **Any other app**: add a custom connector with `https://mcp.admode.ai/mcp`. The [docs](https://admode.ai/docs#connect) show each app.
 
 ## Privacy
