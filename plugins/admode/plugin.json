@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "admode",
   "version": "1.0.0",
-  "description": "Ad prompts built on long-running Meta ads and checked by Admode before anything is rendered: static, UGC, podcast and animated video ads, ad copy, and the research behind them.",
+  "description": "Your AI turns proven Meta winners into ads for your brand: static, AI UGC, podcast and animated ad prompts built on Meta ads that ran for months, checked by Admode before you render. Plus ad copy, video editing and the research behind your ads.",
   "author": {
     "name": "HV Digital AB",
     "url": "https://admode.ai"
@@ -23,8 +23,8 @@
     "com.openai": {
       "interface": {
         "displayName": "Admode",
-        "shortDescription": "Ad prompts built on proven ads",
-        "longDescription": "Admode builds ad prompts on long-running Meta ads and checks every prompt before anything is rendered. Ask for ads and your AI loads your brand from Admode, picks a proven format for each ad, writes three full prompts, lets Admode pick the strongest, and has it checked against the proven ads before you see it.\n\nAdmode makes static image ads in 50 formats, UGC video ads in 8 formats, podcast ads, and animated ads in three styles: Pixar-style 3D, claymation and skeleton. It makes new versions of a static ad that already works, and ad copy built on the copy of long-running ads. It also makes and keeps your VOC research, Foundation Pack and Brand DNA, the research your ads are built on.\n\nAdmode writes and checks prompts. It doesn't generate images or video: you render with your own tools, and only after you agree. Your brands, research and saved work live in your Admode dashboard at admode.ai, where you can download or delete them.\n\nYou sign in with the email of your Admode plan.",
+        "shortDescription": "Ads from proven Meta winners",
+        "longDescription": "Your AI turns proven Meta winners into ads for your brand. Ask for ads in plain words: your AI loads your brand from Admode, picks a proven format for each ad, writes three full prompts, lets Admode pick the strongest, and has Admode check it against the proven ads before you see it.\n\nAdmode makes static image ads in 50 formats, AI UGC video ads in 8 formats, podcast ads, and animated ads in three styles: Pixar-style 3D, claymation and skeleton. It makes new versions of a static ad that already works, ad copy built on the copy of long-running ads, and the research your ads are built on: VOC research, a Foundation Pack and Brand DNA.\n\nYour AI can also edit a finished video ad, with the hook text and captions in a style taken from running ads and your own videos, images and music kept in Admode. It can save your Meta ads and their numbers to Admode, so new ads build on your winners. Admode never touches your ad account.\n\nYour brand, what you like and avoid, and your saved work live in Admode, not in one chat: stop in one AI app and carry on in another, or save a job as your own workflow to run again.\n\nAdmode writes and checks prompts. It doesn't generate images or video: you render with your own tools, and only after you say yes. Your brands, research and saved work are in your Admode dashboard at admode.ai, where you can download or delete them.\n\nYou sign in with your Admode account.",
         "developerName": "HV Digital AB",
         "category": "Creativity",
         "capabilities": [
@@ -36,15 +36,70 @@
         "privacyPolicyURL": "https://admode.ai/privacy",
         "termsOfServiceURL": "https://admode.ai/terms",
         "defaultPrompt": [
-          "Make me 5 static ads for my best-selling product",
-          "Make 3 UGC video ads for my brand",
-          "Make VOC research for my best seller"
+          "Make me 5 static ads for our best seller",
+          "Make an AI UGC ad for our best seller",
+          "Make a claymation ad for our best seller"
         ],
         "brandColor": "#2A79D7",
         "brandColorDark": "#2A79D7",
         "composerIcon": "./assets/icon.svg",
         "logo": "./assets/logo.png",
         "screenshots": []
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Static ads for the test brand",
+              "prompt": "Make me 3 static ads for Admode Demo's best seller.",
+              "tools_triggered": "admode_get_brand, admode_generate_static_ads, admode_get_ad_formats, admode_pick_design, admode_check_ad_prompts",
+              "expected_behavior": "Loads the brand, picks a proven format for each ad, writes three prompts per ad, lets Admode pick and check the strongest, and shows the checked prompts. Nothing is rendered without the user's yes."
+            },
+            {
+              "description": "An AI UGC video ad",
+              "prompt": "Make an AI UGC video ad for Admode Demo's best seller.",
+              "tools_triggered": "admode_get_brand, admode_generate_ugc_ads, admode_get_ad_formats, admode_pick_design, admode_check_ad_prompts",
+              "expected_behavior": "Shows one checked video prompt with what the person says, and asks before making reference images or rendering anything."
+            },
+            {
+              "description": "Ad copy",
+              "prompt": "Write ad copy for Admode Demo's best seller.",
+              "tools_triggered": "admode_get_brand, admode_generate_ad_copy, admode_get_ad_copy, admode_pick_ad_copy, admode_check_ad_copy",
+              "expected_behavior": "Writes primary texts and headlines, lets Admode pick the strongest and check them, and shows the checked copy."
+            },
+            {
+              "description": "What Admode keeps for the brand",
+              "prompt": "What does Admode know about my brand?",
+              "tools_triggered": "admode_get_brand",
+              "expected_behavior": "Summarises the brand's Brand DNA, products and research from Admode, and changes nothing."
+            },
+            {
+              "description": "A rule for every ad",
+              "prompt": "Remember that our ads never use the colour red.",
+              "tools_triggered": "admode_remember",
+              "expected_behavior": "Saves the rule to the brand and says in one line what was saved. The rule shows in the Admode dashboard, where the user can change or delete it."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Image generation isn't Admode's",
+              "prompt": "Generate an image of a sunset for my phone background."
+            },
+            {
+              "description": "Plans and billing aren't changed in the chat",
+              "prompt": "Cancel my Admode subscription."
+            },
+            {
+              "description": "Admode never touches an ad account",
+              "prompt": "Publish these ads to my Meta ad account."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "Admode sells nothing in the chat. People sign in with an Admode account they already have."
+      },
+      "publication": {
+        "release_notes": "First release: static, AI UGC, podcast and animated ad prompts built on long-running Meta ads and checked by Admode; ad copy; new versions of a winning ad; video editing; Meta sync; VOC research, Foundation Pack and Brand DNA; the brand and saved work kept in Admode."
       }
     }
   }

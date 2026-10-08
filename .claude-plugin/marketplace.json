@@ -4,14 +4,14 @@
     "name": "HV Digital AB"
   },
   "metadata": {
-    "description": "Admode for Claude: ad prompts built on long-running Meta ads, checked before anything is rendered.",
+    "description": "Admode for Claude: your AI turns proven Meta winners into ads for your brand.",
     "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "admode",
       "source": "./plugins/admode",
-      "description": "Ad prompts built on long-running Meta ads and checked by Admode before anything is rendered: static, UGC, podcast and animated video ads, ad copy, and the research behind them.",
+      "description": "Your AI turns proven Meta winners into ads for your brand: static, AI UGC, podcast and animated ad prompts built on Meta ads that ran for months, checked by Admode before you render. Plus ad copy, video editing and the research behind your ads.",
       "version": "1.0.0",
       "author": {
         "name": "HV Digital AB",
