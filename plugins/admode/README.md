@@ -21,4 +21,4 @@ Read the [privacy policy](https://admode.ai/privacy) and the [terms of service](
 
 Docs: [admode.ai/docs](https://admode.ai/docs) · Help: [admode.ai/support](https://admode.ai/support)
 
-Made by HV Digital AB.
+Made by Admode.

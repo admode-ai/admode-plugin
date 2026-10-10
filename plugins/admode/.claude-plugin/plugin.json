@@ -2,21 +2,39 @@
   "name": "admode",
   "displayName": "Admode",
   "version": "1.0.0",
-  "description": "Your AI turns proven Meta winners into ads for your brand: static, AI UGC, podcast and animated ad prompts built on Meta ads that ran for months, checked by Admode before you render. Plus ad copy, video editing and the research behind your ads.",
+  "description": "Turn Claude into your Meta ad creative team: static, AI UGC, podcast and animated ad prompts and ad copy for Facebook and Instagram, built on long-running Meta ads and checked before you render. Plus video edits, your Meta ads and their numbers, and the research behind every ad: VOC research, Foundation Pack and Brand DNA.",
   "author": {
-    "name": "HV Digital AB",
+    "name": "Admode",
     "url": "https://admode.ai"
   },
   "homepage": "https://admode.ai",
   "repository": "https://github.com/admode-ai/admode-plugin",
+  "documentationUrl": "https://admode.ai/docs",
+  "supportUrl": "https://admode.ai/support",
+  "privacyPolicyUrl": "https://admode.ai/privacy",
+  "termsOfServiceUrl": "https://admode.ai/terms",
   "license": "MIT",
   "keywords": [
-    "ads",
     "meta-ads",
     "facebook-ads",
+    "instagram-ads",
     "ad-creative",
+    "ad-creatives",
+    "static-ads",
     "ugc",
+    "ai-ugc",
+    "ugc-ads",
+    "video-ads",
     "ad-copy",
-    "marketing"
+    "hooks",
+    "creative-testing",
+    "creative-fatigue",
+    "dtc",
+    "ecommerce",
+    "agency",
+    "marketing",
+    "advertising",
+    "brand-dna",
+    "voc-research"
   ]
 }

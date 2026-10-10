@@ -1,7 +1,7 @@
 {
   "name": "admode",
   "owner": {
-    "name": "HV Digital AB"
+    "name": "Admode"
   },
   "metadata": {
     "description": "Admode for Claude: your AI turns proven Meta winners into ads for your brand.",
@@ -14,7 +14,7 @@
       "description": "Your AI turns proven Meta winners into ads for your brand: static, AI UGC, podcast and animated ad prompts built on Meta ads that ran for months, checked by Admode before you render. Plus ad copy, video editing and the research behind your ads.",
       "version": "1.0.0",
       "author": {
-        "name": "HV Digital AB",
+        "name": "Admode",
         "url": "https://admode.ai"
       },
       "homepage": "https://admode.ai",

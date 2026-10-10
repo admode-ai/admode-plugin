@@ -25,4 +25,4 @@ The plugin runs no code on your computer. It sends nothing anywhere except to Ad
 
 Docs: [admode.ai/docs](https://admode.ai/docs) · Help: [admode.ai/support](https://admode.ai/support)
 
-Made by HV Digital AB. The files in this repository are MIT licensed; the Admode service isn't (see [LICENSE](LICENSE)).
+Made by Admode. The files in this repository are MIT licensed; the Admode service isn't (see [LICENSE](LICENSE)).

@@ -96,7 +96,8 @@
           ]
         },
         "commerce": false,
-        "commerce_description": "Admode sells nothing in the chat. People sign in with an Admode account they already have."
+        "commerce_description": "Admode sells nothing in the chat. People sign in with an Admode account they already have.",
+        "demo_recording_url": "https://youtu.be/SMVfn6TnQfI"
       },
       "publication": {
         "release_notes": "First release: static, AI UGC, podcast and animated ad prompts built on long-running Meta ads and checked by Admode; ad copy; new versions of a winning ad; video editing; Meta sync; VOC research, Foundation Pack and Brand DNA; the brand and saved work kept in Admode."
